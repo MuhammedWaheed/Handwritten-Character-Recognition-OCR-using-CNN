@@ -2,7 +2,7 @@
 
 A deep learning-based Optical Character Recognition (OCR) system that recognizes and reads handwritten characters and words from images using Convolutional Neural Networks.
 
-## Overview
+## 🎯 Overview
 
 This project implements a CNN-based character recognition system capable of identifying 35 different classes (A-Z and 0-9) from handwritten text images. The system processes images, segments individual characters using contour detection, and predicts each character to form complete words.
 
@@ -16,7 +16,7 @@ This project implements a CNN-based character recognition system capable of iden
 - **Model Checkpointing**: Saves best performing model during training
 - **Early Stopping**: Prevents overfitting with patience-based training termination
 
-## Technology Used
+## 🧰 Technology Used
 
 ### Deep Learning & Machine Learning
 - **TensorFlow** - Deep learning framework for building and training neural networks
@@ -51,7 +51,7 @@ This project implements a CNN-based character recognition system capable of iden
 - **Label Binarizer** - One-hot encoding for categorical labels
 - **tqdm** - Progress bar for loops and iterations
 
-## Dataset
+##📁  Dataset
 
 The project uses the [Handwritten Characters Dataset](https://www.kaggle.com/datasets/vaibhao/handwritten-characters) from Kaggle, which contains:
 - Training images organized by character class
@@ -71,29 +71,6 @@ The project uses the [Handwritten Characters Dataset](https://www.kaggle.com/dat
 └── README.md           # Project documentation
 ```
 
-## Model Architecture
-
-The CNN model consists of:
-
-```
-Input Layer (32x32x1 grayscale images)
-    ↓
-Conv2D (32 filters, 3x3) + ReLU + MaxPooling (2x2)
-    ↓
-Conv2D (64 filters, 3x3) + ReLU + MaxPooling (2x2)
-    ↓
-Conv2D (128 filters, 3x3) + ReLU + MaxPooling (2x2)
-    ↓
-Dropout (0.25)
-    ↓
-Flatten
-    ↓
-Dense (128 units) + ReLU
-    ↓
-Dropout (0.2)
-    ↓
-Dense (35 units) + Softmax
-```
 
 ### Model Specifications
 
@@ -102,7 +79,6 @@ Dense (35 units) + Softmax
 - **Total Parameters**: ~500K trainable parameters
 - **Optimizer**: AdamW (learning_rate=1e-3, weight_decay=1e-4)
 - **Loss Function**: Categorical Crossentropy
-
 
 
 ## Key Functions
